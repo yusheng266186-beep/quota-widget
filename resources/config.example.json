@@ -1,0 +1,29 @@
+{
+    "refreshSeconds":  60,
+    "theme":  "dark",
+    "opacity":  0.94,
+    "margin":  16,
+    "topmost":  true,
+    "position":  null,
+    "proxy":  "auto",
+    "proxyCandidates":  [
+                            "http://127.0.0.1:10808",
+                            "http://127.0.0.1:7890",
+                            "http://127.0.0.1:7897",
+                            "http://127.0.0.1:10809",
+                            "http://127.0.0.1:1080"
+                        ],
+    "timeoutMs":  20000,
+    "commandCodeAuth":  "~/.commandcode/auth.json",
+    "cockpitDir":  "~/.antigravity_cockpit",
+    "nodePath":  null,
+    "autoHide":  true,
+    "tabWidth":  112,
+    "tabHeight":  12,
+    "hotZonePadX":  30,
+    "hotZonePadY":  14,
+    "collapseDelayMs":  650,
+    "expandAnimMs":  200,
+    "collapseAnimMs":  160,
+    "dockLeft":  null
+}

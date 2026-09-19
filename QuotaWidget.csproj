@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <AssemblyName>QuotaWidget</AssemblyName>
+    <RootNamespace></RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <!-- 原程序集基于 .NET Framework 4.0 构建，这里默认 net48（Win10/11 自带）。 -->
+    <TargetFramework>net48</TargetFramework>
+
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>resources\app.ico</ApplicationIcon>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <!-- 三个脚本以嵌入资源的方式随 EXE 分发，首次运行时解包到
+       %LOCALAPPDATA%\QuotaWidget。LogicalName 必须与代码里的
+       "QuotaWidget.<文件名>" 保持一致。 -->
+  <ItemGroup>
+    <None Remove="resources\widget.ps1" />
+    <None Remove="resources\fetch-quota.mjs" />
+    <None Remove="resources\config.example.json" />
+
+    <EmbeddedResource Include="resources\widget.ps1" LogicalName="QuotaWidget.widget.ps1" />
+    <EmbeddedResource Include="resources\fetch-quota.mjs" LogicalName="QuotaWidget.fetch-quota.mjs" />
+    <EmbeddedResource Include="resources\config.example.json" LogicalName="QuotaWidget.config.json" />
+  </ItemGroup>
+
+</Project>

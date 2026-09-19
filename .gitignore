@@ -1,0 +1,20 @@
+# 编译产物
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# 内置脚本是源文件，必须入库；忽略构建时可能产生的副本
+resources/*.log
+resources/quota-cache.json
+resources/config.json
+
+# 运行时生成
+*.log
+quota-cache.json
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store

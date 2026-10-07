@@ -13,6 +13,25 @@
 
 ---
 
+<!-- project-navigation:start -->
+## 项目概览
+
+| 项目 | 说明 |
+| --- | --- |
+| 分类 | 桌面效率工具 |
+| 平台 | Windows / PowerShell / Node.js |
+| 当前定位 | 源码与构建项目 |
+
+用桌面浮窗查看 Command Code 与 ChatGPT / Codex 账号的额度状态。
+
+[使用与开发](#快速开始) · [项目总导航](https://github.com/yusheng266186-beep/yusheng266186-beep)
+
+使用前按「快速开始」准备本机数据源与运行依赖；源码来源见 [还原说明](docs/DECOMPILATION.md)。
+
+**阅读导航：** [快速开始](#快速开始) · [构建](#构建) · [配置](#配置)
+
+<!-- project-navigation:end -->
+
 ## 特性
 
 - **一份面板看两边**：Command Code 的积分额度 + ChatGPT/Codex 的 5 小时 / 每周窗口占用率。
